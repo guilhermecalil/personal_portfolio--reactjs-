@@ -9,6 +9,8 @@ Projeto criado para fins educacionais.
 
 ---> no caso desse projeto usaremos o BootStrap então faremos o download dele também com o code npm install react-bootstrap bootstrap (disponível no site: https://react-bootstrap.github.io/getting-started/introduction/)
 
+--> para o carousel utilizei o npm i react-multi-carousel (disponível no site: https://www.npmjs.com/package/react-multi-carousel)
+
 ## CÓDIGOS ENTENDIDOS
 
 -> código de imagem: <img src={} alt="NOSSO TEXTO ALTERNATIVO CASO A IMAGEM NÃO APAREÇA" />
@@ -234,4 +236,4 @@ export default App
 
 npm install react-bootstrap-icons --save1~
 
-Terminar de ver o vídeo a partir do 39 minutos
+Terminar de ver o vídeo a partir do 50 minutos
