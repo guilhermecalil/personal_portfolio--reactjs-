@@ -1,9 +1,10 @@
-import { Container, Col, Row } from "react-bootstrap"
-import Carousel from "react-multi-carousel"
-import "react-multi-carousel/lib/styles.css"
 import meter1 from "../assets/img/meter1.svg"
 import meter2 from "../assets/img/meter2.svg"
 import meter3 from "../assets/img/meter3.svg"
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css"
+import arrow1 from "../assets/img/arrow1.svg"
+import arrow2 from "../assets/img/arrow2.svg"
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -29,23 +30,20 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-      <Container>
-        <Row>
-          <Col>
-            <div className="skill-bx">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
+                industry.<br></br> Lorem Ipsum has been the industry's standard
+                dummy text.
               </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className="skill-slider"
+                className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
                   <img src={meter1} alt="Image" />
@@ -53,7 +51,7 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>Brand Identify</h5>
+                  <h5>Brand Identity</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
@@ -65,14 +63,10 @@ export const Skills = () => {
                 </div>
               </Carousel>
             </div>
-          </Col>
-        </Row>
-      </Container>
-      <img
-        className="background-image-left"
-        src={colorSharp}
-        alt="background image"
-      />
+          </div>
+        </div>
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }
